@@ -1,11 +1,13 @@
-import React from "react";
+import { Pizza, EditPizza, Toppings, AnotherRoute } from "./Components/index";
 
 export default [
-  { path: "/pizza", name: "Pizza", Component: () => <h1>1</h1> },
-  { path: "/pizza/:pizzaId", name: "Edit Pizza", Component: () => <h1>2</h1> },
+  { path: "/pizza", name: "Pizza", Component: Pizza },
+  { path: "/pizza/:pizzaId", name: "Edit Pizza", Component: EditPizza },
   {
     path: "/pizza/:pizzaId/toppings",
     name: "Pizza Toppings",
-    Component: () => <h1>3</h1>
-  }
+    Component: Toppings
+  },
+  { path: "/another", name: "Another", Component: AnotherRoute },
+  { path: "/one", name: "One", Component: AnotherRoute }
 ];

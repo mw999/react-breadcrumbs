@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correct routes are exported 1`] = `
+Array [
+  "Pizza: /pizza",
+  "Edit Pizza: /pizza/:pizzaId",
+  "Pizza Toppings: /pizza/:pizzaId/toppings",
+  "Another: /another",
+  "One: /one",
+]
+`;
