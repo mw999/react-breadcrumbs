@@ -36,7 +36,7 @@ const EditPizza = ({
     <h1 className="bold text-6xl">
       Edit Pizza: {pizza.find(({ id }) => id === pizzaId).name}
     </h1>
-    <Link className="underline text-blue-500" to="/pizza/1/toppings">
+    <Link className="underline text-blue-500" to={`/pizza/${pizzaId}/toppings`}>
       View Toppings
     </Link>
   </div>
